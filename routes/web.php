@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\StudentController;
+use App\Http\Controllers\AssigmentController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -18,6 +19,7 @@ Route::middleware([
 
     //ruta para el controller Student
     Route::resource('students', StudentController::class);
+    Route::resource('assigments', AssigmentController::class);
 });
 
 
